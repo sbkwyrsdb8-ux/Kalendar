@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Habit Calendar</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="logo">📅 Trackers</div>
+      <div id="trackers"></div>
+      <button id="addTracker">+ Добавить</button>
+    </aside>
+
+    <main class="main">
+
+      <div class="header">
+        <button id="prevMonth">◀</button>
+        <div id="monthLabel"></div>
+        <button id="nextMonth">▶</button>
+      </div>
+
+      <div class="weekdays">
+        <div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div>
+        <div>Пт</div><div>Сб</div><div>Вс</div>
+      </div>
+
+      <div id="calendar" class="calendar"></div>
+
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
