@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f6f6f6;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #111;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tracker {
+  padding: 8px;
+  background: #222;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tracker.active {
+  background: #4caf50;
+}
+
+button {
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  background: white;
+  min-height: 70px;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.day:hover {
+  background: #eee;
+}
+
+.day .num {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.day.hasData {
+  border: 2px solid #4caf50;
+}
+
+.day.today {
+  background: #fff7d6;
+}
